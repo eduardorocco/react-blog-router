@@ -34,7 +34,7 @@ export default function PostDetail() {
 
     const {title, content, image} = post
     return (
-        <div>
+        <div className='container'>
             <h1>{title}</h1>
             <img src={`${API_BASE_URI}imgs/posts/${image}`}/>
             <p>{content}</p>

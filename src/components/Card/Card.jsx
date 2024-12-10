@@ -1,8 +1,9 @@
 import style from './Card.module.css'
 import placeHolder from '../../assets/placeholder.webp'
 import trashCan from '../../assets/cestino-chiuso.png'
+import { Link } from 'react-router-dom'
 
-export default function Card({ title = '', content = '', tags = [], image = '', onDelete = () => { } }) {
+export default function Card({ title = '', content = '', tags = [], image = '', postId, onDelete = () => { } }) {
 
 
     const getTagClass = (tag) => {
@@ -45,7 +46,9 @@ export default function Card({ title = '', content = '', tags = [], image = '', 
                     </div>
                     <div className={style.text}>{content}</div>
                     <div className={style.footerCard}>
-                        <div className={style.button}>Leggi di più</div>
+                        <Link to={`/our-recipes/${postId}`} className={style.button}>
+                            Leggi di più
+                        </Link>
                         <div className={style.trash}>
                             <img onClick={onDelete} src={trashCan} alt="" />
                         </div>

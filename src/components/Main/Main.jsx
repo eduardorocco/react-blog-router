@@ -135,7 +135,10 @@ export default function Main() {
                                 content={post.content}
                                 tags={post.tags}
                                 image={`${API_BASE_URI}imgs/posts/${post.image}`}
-                                onDelete={() => deletePost(post.id)} />
+                                onDelete={() => deletePost(post.id)}
+                                postId= {post.id}
+                                 />
+                                
                         </div>
                     ))}
                 </div>
