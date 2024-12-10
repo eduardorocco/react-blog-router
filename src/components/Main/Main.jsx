@@ -126,6 +126,7 @@ export default function Main() {
                 </form>
             </div>
             <div className="container">
+                <h1>Le nostre ricette</h1>
                 <div className={style.row}>
                     {publishedPosts.map((post) => (
                         <div key={post.id} className="col-6">

@@ -12,13 +12,14 @@ export default function Navbar() {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/about-us'>
-                            About us
+
+                        <NavLink to='/our-recipes'>
+                            Our recipes
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/our-recipes'>
-                            Our recipes
+                        <NavLink to='/about-us'>
+                            About us
                         </NavLink>
                     </li>
                 </ul>

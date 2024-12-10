@@ -1,5 +1,6 @@
 .row{
-    padding-top: 30px;
+    border-top: solid 2px rgb(29, 29, 29);
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
