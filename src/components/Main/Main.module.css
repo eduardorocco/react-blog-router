@@ -1,0 +1,35 @@
+.row{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.form{
+    max-width: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+input{
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+}
+
+.submit{
+    width: 50px;
+    background-color: cadetblue;
+    border: none;
+    margin: 0 auto;
+    border-radius: 4px;
+    color: white;
+}
+
+.checkbox {
+    display: flex;
+    gap: 5px;
+}

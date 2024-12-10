@@ -1,0 +1,14 @@
+.container {
+
+    margin: 0 auto;
+    margin-top: 80px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    font-size: 12px;
+}

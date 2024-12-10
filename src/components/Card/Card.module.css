@@ -1,0 +1,80 @@
+.card {
+    
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.31)   0px 0px 25px 0px ;
+    max-width: 600px;
+    background-color: white;
+    margin: 10px;
+}
+
+.image {
+    object-fit: cover;
+    width: 600px;
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px;
+    
+}
+
+.contentContainer{
+    padding: 10px 8px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.text{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.button{
+    background-color: orange;
+    color: white;
+    text-transform: uppercase;
+    padding: 7px;
+    font-size: 12px;
+    align-content: center;
+}
+
+.footerCard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trash {
+    width: 40px;
+}
+
+.tags{
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    gap: 4px;
+}
+
+.tags > * {
+    
+    padding: 5px;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+
+.yellow {
+    background-color: rgb(255, 251, 0);
+}
+
+.green {
+    background-color: rgb(46, 112, 49);
+    color: white;
+}
