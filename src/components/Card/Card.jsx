@@ -46,7 +46,6 @@ export default function Card({ title = '', content = '', tags = [], image = '', 
                     <div className={style.text}>{content}</div>
                     <div className={style.footerCard}>
                         <div className={style.button}>Leggi di più</div>
-
                         <div className={style.trash}>
                             <img onClick={onDelete} src={trashCan} alt="" />
                         </div>
