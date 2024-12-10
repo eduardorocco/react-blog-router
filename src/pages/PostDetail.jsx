@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import style from './PostDetail.module.css'
 
 const API_BASE_URI = 'http://localhost:3000/'
 
@@ -49,27 +50,36 @@ export default function PostDetail() {
     const prevPost = posts[currentIndex - 1]
     const nextPost = posts[currentIndex + 1]
 
-    const { title, content, image } = post
+    const { title, content, image, tags } = post
+
     return (
         <div className='container'>
+            <div className={style.row}>
             <h1>{title}</h1>
-            <img src={`${API_BASE_URI}imgs/posts/${image}`} />
+            <img className={style.image} src={`${API_BASE_URI}imgs/posts/${image}`} />
+            <div className={style.tagContainer}>
+                {tags.map(tag => (
+                    <div>{tag}</div>
+                )
+                )}
+            </div>
+            <h2>Descrizione:</h2>
             <p>{content}</p>
 
-            <div>
+            <div className={style.btnContainer}>
                 {prevPost && (
-                    <Link to={`/our-recipes/${prevPost.id}`} className="previousLink">
-                        Previous
+                    <Link to={`/our-recipes/${prevPost.id}`} className={style.btn} >
+                        Post Precedente
                     </Link>
                 )}
 
                 {nextPost && (
-                    <Link to={`/our-recipes/${nextPost.id}`} className="nextLink">
-                        Next
+                    <Link to={`/our-recipes/${nextPost.id}`} className={style.btn} >
+                        Prossimo Post
                     </Link>
                 )}
             </div>
-
+            </div>
         </div>
     )
 }

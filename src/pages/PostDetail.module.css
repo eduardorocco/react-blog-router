@@ -1,0 +1,33 @@
+.row {
+   display: flex;
+   flex-direction: column;
+   row-gap: 50px;
+   padding-top: 50px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    width: 100%;
+}
+
+.btn {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: rgb(70, 70, 70);
+}
+
+.tagContainer {
+    display: flex;
+    gap: 30px;
+    font-weight: bolder;
+}
