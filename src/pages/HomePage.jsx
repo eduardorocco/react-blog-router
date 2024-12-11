@@ -4,14 +4,7 @@ import axios from 'axios';
 const API_BASE_URI = 'http://localhost:3000/'
 
 export default function HomePage() {
-    function getRandomInt(min, max) {
-        min = Math.ceil(min)
-        max = Math.floor(max)
-        return Math.floor(Math.random() * (max - min)) + min
-    }
 
-    // Genera un numero casuale tra 1 e 5
-    let randomInt = getRandomInt(1, 5)
 
     const [posts, setPosts] = useState([])
     const [error, setError] = useState('')
@@ -30,6 +23,15 @@ export default function HomePage() {
 
         fetchAllPosts();
     }, []);
+
+    function getRandomInt(min, max) {
+        min = Math.ceil(min)
+        max = Math.floor(max)
+        return Math.floor(Math.random() * (max - min)) + min
+    }
+
+    let randomInt = getRandomInt(1, posts.length)
+
 
     useEffect(() => {
         
